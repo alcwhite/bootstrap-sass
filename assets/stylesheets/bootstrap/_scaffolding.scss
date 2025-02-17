@@ -1,3 +1,5 @@
+@use "mixins/vendor-prefixes";
+
 //
 // Scaffolding
 // --------------------------------------------------
@@ -9,11 +11,11 @@
 // For recommendations on resolving such conflicts, see
 // https://getbootstrap.com/docs/3.4/getting-started/#third-box-sizing
 * {
-  @include box-sizing(border-box);
+  @include vendor-prefixes.box-sizing(border-box);
 }
 *:before,
 *:after {
-  @include box-sizing(border-box);
+  @include vendor-prefixes.box-sizing(border-box);
 }
 
 
